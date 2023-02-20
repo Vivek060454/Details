@@ -1,34 +1,17 @@
+class Users{
+  Users({
+    required this.status,
+    required this.result,
+    required this.slpCode,
+    required this.slpName,
+    required this.mobile,
+    required this.mgt,
+  });
 
-
-class UserModel{
-  String? uid;
-  String? email;
-  String? phone;
-
-
-  UserModel({this.uid,this.email,this.phone, required eamil});
-
-
-  factory UserModel.fromMap(map){
-
-    return UserModel(
-      uid: map['uid'],
-      eamil: map['email'],
-      phone:map['phone'],);
-  }
-  Map<String,dynamic>
-  toMap() {
-    return {
-      'uid':uid,
-      'email':email,
-      'phone':phone,
-
-
-    };
-  }
+  String status;
+  String result;
+  String slpCode;
+  String slpName;
+  String mobile;
+  String mgt;
 }
-
-
-
-
-
